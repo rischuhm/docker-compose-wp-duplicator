@@ -11,7 +11,7 @@ After your containers started, navigate to `http://localhost:8000/wp-archive/ins
 
 Continue now with the instructions from point 6. 
 
-In step 2 of the cloning script, enter the following values:
+In the Setup step of the cloning script, enter the following values and then hit the validate button:
 + Action: Revome All Data
 + Host: db
 + Database: exampledb
@@ -21,3 +21,6 @@ In step 2 of the cloning script, enter the following values:
 These values are given in the docker-compose.yaml file. If you change them there, you also have to adjust them in the cloning process. Only use these values for local development and not in production!
 
 Don't change anything in step 3 and continue to step 4. When you reach your admin-panel, you need to login with the credentials from your **original** page!
+
+
+In case of a permission error within the duplicator setup, just change the permissions for wp-archive on your local machine by using `chmod a+rwx -R ./wp-archive`
